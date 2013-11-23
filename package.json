@@ -1,0 +1,17 @@
+{
+    "name": "numjs",
+    "description": "An unofficial re-implementation of Python's numpy for JavaScript and Node.js",
+    "author": {
+        "name": "Nathan Woodbury",
+        "email": "nathanswoodbury@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/nwoodbury/numjs.git"
+    },
+    "main": "numjs.js",
+    "version": "0.0.1",
+    "dependencies": {
+
+    }
+}
