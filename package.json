@@ -9,13 +9,14 @@
         "type": "git",
         "url": "git://github.com/nwoodbury/numjs.git"
     },
-    "main": "numjs.js",
+    "main": "index.js",
     "version": "0.0.1",
     "dependencies": {
 
     },
     "devDependencies": {
-        "mocha": "latest"
+        "mocha": "latest",
+        "should": "latest"
     },
     "scripts": {
         "test": "node_modules/.bin/mocha test/tests.js"
