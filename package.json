@@ -16,9 +16,11 @@
     },
     "devDependencies": {
         "mocha": "latest",
-        "should": "latest"
+        "should": "latest",
+        "doxx": "latest"
     },
     "scripts": {
-        "test": "node_modules/.bin/mocha test/tests.js"
+        "test": "node_modules/.bin/mocha test/tests.js",
+        "document": "node_modules/.bin/doxx --source lib --target docs"
     }
 }

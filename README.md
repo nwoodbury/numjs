@@ -12,3 +12,9 @@ JavaScript and node.js.
 To test numjs:
 
     npm test
+
+## Documenting
+
+To document the modules:
+
+    npm run-script document
