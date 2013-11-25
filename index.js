@@ -1,5 +1,6 @@
 'use strict';
 
-var numjs = require('./lib');
+var numjs = {};
+numjs.narray = require('./lib/core/narray.js');
 
 module.exports = numjs;
