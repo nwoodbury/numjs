@@ -230,6 +230,23 @@ describe('narray', function() {
     });
 
     //=========================================================================
+    //  Single array operations
+    //=========================================================================
+
+    describe('#Sum', function() {
+        it('should sum the elements in arr', function() {
+            assert.equal(0, narray.Sum([]),
+                         'While checking a sum on an empty array.');
+            assert.equal(1, narray.Sum([1]),
+                         'While checking the sum of a size-one array.');
+            assert.equal(2.2, narray.Sum([1, 1.2]),
+                         'While checking the sum of a size-two array.');
+            assert.equal(-2, narray.Sum([1, 2, -5]),
+                         'While checking sum with negative values');
+        });
+    });
+
+    //=========================================================================
     //  Misc
     //=========================================================================
 
