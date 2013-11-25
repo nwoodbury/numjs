@@ -246,6 +246,19 @@ describe('narray', function() {
         });
     });
 
+    describe('#Mean', function() {
+        it('should compute the arithmetic mean of arr', function() {
+            assert.equal(0, narray.Mean([]),
+                         'While checking the mean of an empty array.');
+            assert.equal(2, narray.Mean([2]),
+                         'While checking the mean of a size-one array.');
+            assert.equal(2, narray.Mean([1, 2, 3]),
+                         'While checking the mean of a size > 1 array.');
+            assert.equal(-2, narray.Mean([-2, -4, -6, 4]),
+                         'While checking the mean with negatives.');
+        });
+    });
+
     //=========================================================================
     //  Misc
     //=========================================================================
