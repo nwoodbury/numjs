@@ -1,7 +1,8 @@
 # numjs
 
-An unofficial re-implimentation of Python's numpy library written for
-JavaScript and node.js.
+A numeric manipulation library for numbers, arrays, and matrices.
+
+Note: this library is still in early alpha and its functionality is limited.
 
 ## Installation
 

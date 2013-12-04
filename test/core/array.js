@@ -259,6 +259,31 @@ describe('narray', function() {
         });
     });
 
+    describe('#PrePad', function() {
+        it ('should pad the values into the array', function() {
+            assert.deepEqual([1, 2, 3], narray.PrePad([1, 2, 3], 1, 99),
+                             'While checking length > arr.length.');
+            assert.deepEqual([1, 2, 3], narray.PrePad([1, 2, 3], 3, 99),
+                             'While checking length = arr.length.');
+            assert.deepEqual([99, 99, 99, 1, 2, 3],
+                             narray.PrePad([1, 2, 3], 6, 99),
+                             'While checking length < arr.length.');
+        });
+    });
+
+    describe('#PostPad', function() {
+        it ('should pad the values into the array', function() {
+            assert.deepEqual([1, 2, 3], narray.PostPad([1, 2, 3], 1, 99),
+                             'While checking length > arr.length.');
+            assert.deepEqual([1, 2, 3], narray.PostPad([1, 2, 3], 3, 99),
+                             'While checking length = arr.length.');
+            assert.deepEqual([1, 2, 3, 99, 99, 99],
+                             narray.PostPad([1, 2, 3], 6, 99),
+                             'While checking length < arr.length.');
+        });
+    });
+
+
     //=========================================================================
     //  Misc
     //=========================================================================
